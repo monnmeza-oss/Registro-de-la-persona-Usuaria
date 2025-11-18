@@ -1,0 +1,107 @@
+/* PALETA DE COLORES */
+:root {
+    --olivo: #6f7b3b;
+    --olivo-dark: #3e4523;
+    --beige: #f3f4ec;
+    --blanco: #ffffff;
+    --gris: #6f6f6f;
+}
+
+/* ESTILO GENERAL */
+body {
+    font-family: "Raleway", sans-serif;
+    background: var(--beige);
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto;
+    background: var(--blanco);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: var(--olivo-dark);
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+/* FORMULARIO */
+#form-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ETIQUETAS */
+label {
+    font-weight: 500;
+    color: var(--olivo-dark);
+    font-size: 0.95rem;
+}
+
+/* CAMPOS DE TEXTO, EMAIL, PASSWORD Y TEXTAREA */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: 1px solid #b9b9b9;
+    outline: none;
+    font-family: "Raleway", sans-serif;
+}
+
+/* EFECTO AL ESCRIBIR */
+input:focus,
+textarea:focus {
+    border-color: var(--olivo);
+}
+
+/* AGRUPACIÓN DE CHECKBOXES */
+fieldset {
+    border: 1px solid var(--olivo);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--olivo-dark);
+    font-size: 0.95rem;
+}
+
+/* CHECKBOXES */
+fieldset label {
+    display: block;
+    font-weight: 400;
+    color: var(--gris);
+    margin-top: 4px;
+}
+
+/* BOTÓN */
+button {
+    background: var(--olivo);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: var(--olivo-dark);
+}
